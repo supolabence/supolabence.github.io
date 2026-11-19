@@ -24,7 +24,7 @@ The repository includes a GitHub Actions workflow to build and publish Astro aut
 
 ## Content and rights review before publishing
 
-- **All five images in `public/images/` are user-provided, unpublished research visualizations**. The previous publication-page images have been removed from this project and its ZIP.
+- **The portfolio includes both unpublished research visualizations and a published PLOS ONE figure.** The defensive partial-dependence visualization is Figure 4 from the PLOS ONE paper, licensed CC BY 4.0, with attribution on the case-study page. Other publisher figure exports have been removed.
 - These images are not automatically cleared for public use merely because they were not published. Before deploying, verify that the underlying NBA/SportVU tracking data and any third-party graphical elements can be displayed publicly under the applicable data access agreements.
 - The extra-pass orange curves are described as quadratic fits; the figure alone does not establish that they are quantile-regression fits.
 - Confirm the precise wording and context of reported model metrics against the original paper.
@@ -33,10 +33,14 @@ The repository includes a GitHub Actions workflow to build and publish Astro aut
 
 ### Image mapping
 
-- `defensive-sequence.png` and `defensive-feature-importance.jpg`: Defensive Gaps
+- `defensive-sequence.png` and `defensive-partial-dependence.png`: Defensive Gaps (the latter is published Figure 4, CC BY 4.0)
 - `secondary-pass-detection.png` and `secondary-inside-out.png`: Secondary Assists
 - `extra-pass-duration.png`: Extra Pass
 
 ## Planned future extension
 
 A separate Game Momentum / Coaching Decision application can be linked as an additional project when it is ready. GitHub Pages hosts the static portfolio, not a Python backend.
+
+## Deployment note
+
+The GitHub Actions workflow does not enable npm caching because the starter project does not include a package-lock.json. This avoids the setup-node missing-lockfile error.
