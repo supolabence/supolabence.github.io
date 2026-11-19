@@ -44,3 +44,9 @@ A separate Game Momentum / Coaching Decision application can be linked as an add
 ## Deployment note
 
 The GitHub Actions workflow does not enable npm caching because the starter project does not include a package-lock.json. This avoids the setup-node missing-lockfile error.
+
+## Research-grounded editorial review (November 2026)
+
+The three case studies have been rewritten against the full-text papers. Defensive Gaps is about identifying cutting openings, not player-choice prediction. Secondary Assists investigates ball movement and shot quality, with event extraction as the enabling technical task. Extra Pass operationalizes a missed extra-pass opportunity using conservative simulation; pass duration is only one input, not a game-play prediction.
+
+Unpublished diagnostic plots are distinguished from published Figure 4 (PLOS ONE, CC BY 4.0). All numerical results are scoped to the papers’ datasets and validation methods. Data-provenance and reuse conditions remain a separate consideration.
